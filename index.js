@@ -106,9 +106,8 @@ var Main = /** @class */ (function () {
                             return [2 /*return*/];
                         }
                         dataObject = JSON.parse(rawData);
-                        promises = dataObject.stopPoints.slice(0, 20).map(function (stopPoint) {
+                        promises = dataObject.stopPoints.slice(0, 2).map(function (stopPoint) {
                             Main.outputObject.busStops[stopPoint.commonName] = [];
-                            console.log(stopPoint.commonName);
                             return Main.callURL("https://api.tfl.gov.uk/StopPoint/" + stopPoint.naptanId + "/Arrivals/?" + Main.appID)
                                 .then(function (data) { return Main.handleBusTimes(data, stopPoint.commonName); });
                         });
