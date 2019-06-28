@@ -1,7 +1,31 @@
 #header {
     background: #ff7f7f;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100px;
+}
+
+body {
+    background-color: #3e0500;
 }
 
 #results {
-    background: #D0E4F5;
+    /* background: #D0E4F5; */
+    position: absolute;
+    top: 150px;
+    color: white;
+}
+
+.BottomButton {
+    position: absolute;
+    bottom: 10px;
+}
+
+img { 
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
