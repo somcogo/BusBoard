@@ -1,0 +1,15 @@
+#header {
+    background: #ff7f7f;
+}
+
+#results {
+    background: #D0E4F5;
+}
+
+.stop-results {
+    border: black solid 2px;
+}
+
+ul {
+    color: red;
+}
